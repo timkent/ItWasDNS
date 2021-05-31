@@ -1,0 +1,3 @@
+#!/bin/sh
+
+dnsmasq -h -d -Q 1337 -i ens32 -2 ens32 --server=/bad.pwned.tk/172.16.235.4 --server=/good.pwned.tk/172.16.235.6

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+tc qdisc add dev ens32 root netem delay 1500ms
+dnsmasq -h -H /home/demo/hosts -T 3600 -d -i ens32 -2 ens32
