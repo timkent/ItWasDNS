@@ -21,6 +21,7 @@ def main():
     app = Flask(__name__)
     @app.route('/')
     def index():
+        global rebound
         result = '''<html>
   <body>
     <p>I'm an evil website!</p>
